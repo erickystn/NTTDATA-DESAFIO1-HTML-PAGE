@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Veterinaria</title>
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <img src="../assets/icon.png" alt="" width="60%">
+            <ul>
+                <li><a href="../index.html">🏠 Pagina Inicial</a></li>
+                <li><a href="./about.html"> ℹ Sobre a Clinica</a></li>
+                <li><a href="./opening.html">🕐 Horário de Atendimento</a></li>
+                <li><a href="./contact.html">📞 Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header-contact"></div>
+            <hr>
+
+            <div class="content">
+             <h2> Contatos </h2>
+            <p><strong>Celular:</strong> (21) 99210 1724 </p>
+            <p><strong>Telefone:</strong> (21) 3333 3333 </p>
+
+            <h2> Localização </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.7175702598006!2d-43.2958804!3d-22.775860299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997a83e2961b39%3A0x94fbce58e97a86ce!2sHospital%20de%20Cl%C3%ADnicas%20S%C3%A3o%20Vicente!5e0!3m2!1spt-BR!2sbr!4v1668749384366!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <hr>
+            <h2>Formulário de Contato</h2>
+
+            <fieldset>
+
+                <legend> Insira suas informações</legend>
+
+            <form onsubmit="alert('enviado')" method="post">
+                <label for="nome"><p>Nome</p>
+                    <input type="text" name="nome" id="nome">
+                </label>
+
+
+                <label for="email"> <p>Email</p>
+                    <input type="email" name="email" id="email">
+                </label>
+
+
+                <label for="assunto">
+                    <p>Assunto:</p>
+                    <input type="text" name="assunto" id="assunto">
+                </label>
+
+
+                <label for="mensagem">
+                    <p>Mensagem </p>
+                    <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+                </label>
+
+                <div><button id="submitBtn" type="submit"> Enviar</button>
+                <button type="reset">Limpar </button>
+            </div>
+
+            </form>
+
+
+        </fieldset>
+
+
+
+            </div>
+
+            <div class="footer">
+                <div class="address">
+                    <h4>Endereço</h4>
+                    <address>
+                        <p> Rua das neves, 234
+                            <br />
+                            São Paulo - SP
+                        </p>
+                    </address>
+                </div>
+                <div class="midia">
+                    <a href="http://facebook.com"><img src="../assets/124010.png" alt="" width="50px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", myFunction);
+        function myFunction() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+
+</html>

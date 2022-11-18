@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128,0.3);
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    background-color: rgb(0, 133, 190);
+    padding-top: 40px;
+    padding-right: 10px;
+
+}
+.menu ul{
+    margin-left: -5px;
+    list-style: none;
+
+}
+.menu li {
+    line-height: 2em;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+.header {
+    background: -webkit-linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 47%,
+            hsla(198, 100%, 34%, 1) 52%, hsla(198, 100%, 34%, 1) 100%);
+    min-height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-about {
+
+    background: url("../assets/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+}
+
+.header-opening {
+
+    background: url("../assets/atendimento.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+}
+
+.header-contact{
+    background: url("../assets/contatos.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 140px;
+}
+
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    min-height: 30px;
+    background:  -webkit-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, rgb(0, 133, 190) 100%);
+}
+
+address{
+    padding-left: 5px;;
+
+}
+
+.midia{
+    padding-right: 30px;
+}
+
+.midia img{
+
+    border-radius: 10px;
+
+}
+
+table, tr, td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px black solid;
+    line-height: 30px;
+}
+
+.atendimento th{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 8rem;
+}
+
+
+.atendimento tr:hover{
+    background-color:rgb(133, 199, 227) ;
+}
